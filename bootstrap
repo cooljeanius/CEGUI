@@ -1,0 +1,51 @@
+#!/bin/sh
+
+set -e
+
+if [ ! -z "`which autoreconf`" ]; then
+	echo "Warning! It would probably be a better idea to just run \"autoreconf -fvi\" instead of running this script."
+	echo "Continuing anyway..."
+fi
+
+export WANT_AUTOMAKE='1.10'
+export WANT_AUTOCONF_2_5=1
+
+if [ ! -z "`which libtoolize`" ]; then
+	export LIBTOOLIZE=`which libtoolize`
+elif [ ! -z "`which glibtoolize`" ]; then
+	export LIBTOOLIZE=`which glibtoolize`
+else
+	echo "libtool not found; this is required in order to use this bootstrap script."
+	exit 0
+fi
+echo "Running libtool..."
+$LIBTOOLIZE --force --no-warn --copy
+if [ -z "`which aclocal`" ]; then
+	echo "aclocal not found; this is required in order to use this bootstrap script."
+	exit 0
+fi
+echo "Running aclocal..."
+aclocal $ACLOCAL_FLAGS -I m4 --force
+if [ -z "`which autoheader`" ]; then
+	echo "autoheader not found; this is required in order to use this bootstrap script."
+	exit 0
+fi
+echo "Running autoheader..."
+autoheader --force
+if [ -z "`which automake`" ]; then
+	echo "automake not found; this is required in order to use this bootstrap script."
+	exit 0
+fi
+echo "Running automake..."
+automake --include-deps --add-missing --foreign --copy --force-missing
+if [ -z "`which autoconf`" ]; then
+	echo "autoconf not found; this is required in order to use this bootstrap script."
+	exit 0
+fi
+echo "Running autoconf..."
+autoconf --force
+if [ -x ./configure ]; then
+	echo "Done! Type \"./configure\" next."
+else
+	echo "Looks like this script failed to generate a proper configure script..."
+fi
