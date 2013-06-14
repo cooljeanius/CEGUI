@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/cegui/src/ScriptingModules/PythonScriptModule/bindings/output/CEGUI \
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/src/ScriptingModules/PythonScriptModule/bindings/output/CEGUI \
            -I$(top_srcdir)/cegui/include \
 		   -I$(PYTHON_INCLUDE_DIR)
 

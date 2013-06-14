@@ -14,25 +14,25 @@
 
 /* Set this to the default XMLParser to be used (XercesParser, ExpatParser,
    LibxmlParser or TinyXMLParser). */
-#define CEGUI_DEFAULT_XMLPARSER XercesParser
+#define CEGUI_DEFAULT_XMLPARSER ExpatParser
 
 /* Define if output names have an added suffix. */
 /* #undef CEGUI_HAS_BUILD_SUFFIX */
 
 /* Define to enable possible use of CEGUI::DefaultLogger. */
-#define CEGUI_HAS_DEFAULT_LOGGER 
+#define CEGUI_HAS_DEFAULT_LOGGER /**/
 
 /* Define to enable freetype 2 font support in CEGUI */
-#define CEGUI_HAS_FREETYPE 
+#define CEGUI_HAS_FREETYPE /**/
 
 /* Defined when the resource provider with minizip support is built. */
 /* #undef CEGUI_HAS_MINIZIP_RESOURCE_PROVIDER */
 
 /* Define to enable PCRE regular expression support in CEGUI */
-#define CEGUI_HAS_PCRE_REGEX 
+#define CEGUI_HAS_PCRE_REGEX /**/
 
 /* Define if shared libraries have a version suffix. */
-#define CEGUI_HAS_VERSION_SUFFIX 
+#define CEGUI_HAS_VERSION_SUFFIX /**/
 
 /* Defines irrlicht SDK version. 14 is 1.4 or 1.5.x and 16 is 1.6 or later. */
 /* #undef CEGUI_IRR_SDK_VERSION */
@@ -52,17 +52,17 @@
 /* #undef CEGUI_SAMPLES_USE_IRRLICHT */
 
 /* Define to have the Ogre renderer available in the samples */
-/* #undef CEGUI_SAMPLES_USE_OGRE */
+#define CEGUI_SAMPLES_USE_OGRE /**/
 
 /* Define to have the OpenGL CEGUI renderer available in the samples (requires
    glut) */
-#define CEGUI_SAMPLES_USE_OPENGL 
+#define CEGUI_SAMPLES_USE_OPENGL /**/
 
 /* Set this to the name of the tinyxml.h file */
 #define CEGUI_TINYXML_H "ceguitinyxml/tinyxml.h"
 
 /* Set this if your tiny xml version is 2.6 or higher */
-#define CEGUI_TINYXML_HAS_2_6_API 1
+/* #undef CEGUI_TINYXML_HAS_2_6_API */
 
 /* Set this to the name of the tinyxml namespace */
 #define CEGUI_TINYXML_NAMESPACE CEGUITinyXML
@@ -83,7 +83,7 @@
 #define HAVE_ATEXIT 1
 
 /* define if the Boost::Python library is available */
-#define HAVE_BOOST_PYTHON 
+/* #undef HAVE_BOOST_PYTHON */
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
@@ -135,7 +135,7 @@
 #define HAVE_PTRDIFF_T 1
 
 /* Define to 1 if you have the <Python.h> header file. */
-#define HAVE_PYTHON_H 1
+/* #undef HAVE_PYTHON_H */
 
 /* Define to 1 if your system has a GNU libc compatible `realloc' function,
    and to 0 otherwise. */
@@ -157,7 +157,7 @@
 #define HAVE_SQRT 1
 
 /* Define to 1 if stdbool.h conforms to C99. */
-#define HAVE_STDBOOL_H 1
+/* #undef HAVE_STDBOOL_H */
 
 /* Define to 1 if you have the <stddef.h> header file. */
 #define HAVE_STDDEF_H 1
@@ -242,6 +242,9 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "CEGUI"
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.7.9"
 
@@ -261,7 +264,7 @@
 /* #undef X_DISPLAY_MISSING */
 
 /* Define for Solaris 2.5.1 so the uint64_t typedef from <sys/synch.h>,
-   <pthread.h>, or <semaphore.h> is not used. If the typedef was allowed, the
+   <pthread.h>, or <semaphore.h> is not used. If the typedef were allowed, the
    #define below would cause a syntax error. */
 /* #undef _UINT64_T */
 

@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/Samples/common/include \
+AM_CPPFLAGS = -I$(top_srcdir)/Samples/common/include \
            -I$(top_srcdir)/cegui/include \
            $(CEGUI_SAMPLES_CFLAGS)
 
@@ -26,7 +26,7 @@ libCEGUISampleHelper@cegui_bsfx@_la_SOURCES  += Win32AppHelper.cpp Win32CEGuiRen
 endif
 
 if CEGUI_USING_GTK2
-    INCLUDES += $(GTK_CFLAGS)
+    AM_CPPFLAGS += $(GTK_CFLAGS)
     libCEGUISampleHelper@cegui_bsfx@_la_LIBADD += $(GTK_LIBS)
     libCEGUISampleHelper@cegui_bsfx@_la_SOURCES += GTK2CEGuiRendererSelector.cpp
 endif
@@ -36,19 +36,19 @@ if CEGUI_SAMPLES_USE_OPENGL
                                       $(OpenGL_LIBS)
 endif
 if CEGUI_SAMPLES_USE_OGRE
-    INCLUDES += $(Ogre_CFLAGS) $(OIS_CFLAGS)
+    AM_CPPFLAGS += $(Ogre_CFLAGS) $(OIS_CFLAGS)
     libCEGUISampleHelper@cegui_bsfx@_la_SOURCES += CEGuiOgreBaseApplication.cpp
     libCEGUISampleHelper@cegui_bsfx@_la_LIBADD += $(top_builddir)/cegui/src/RendererModules/Ogre/libCEGUIOgreRenderer@cegui_bsfx@.la \
                                       $(Ogre_LIBS) $(OIS_LIBS)
 endif
 if CEGUI_SAMPLES_USE_IRRLICHT
-    INCLUDES += $(Irrlicht_CFLAGS)
+    AM_CPPFLAGS += $(Irrlicht_CFLAGS)
     libCEGUISampleHelper@cegui_bsfx@_la_SOURCES += CEGuiIrrlichtBaseApplication.cpp
     libCEGUISampleHelper@cegui_bsfx@_la_LIBADD += $(top_builddir)/cegui/src/RendererModules/Irrlicht/libCEGUIIrrlichtRenderer@cegui_bsfx@.la \
                                       $(Irrlicht_LIBS)
 endif
 if CEGUI_SAMPLES_USE_DIRECTFB
-    INCLUDES += $(directfb_CFLAGS)
+    AM_CPPFLAGS += $(directfb_CFLAGS)
     libCEGUISampleHelper@cegui_bsfx@_la_SOURCES += CEGuiDirectFBBaseApplication.cpp
     libCEGUISampleHelper@cegui_bsfx@_la_LIBADD += $(top_builddir)/cegui/src/RendererModules/DirectFB/libCEGUIDirectFBRenderer@cegui_bsfx@.la \
                                       $(directfb_LIBS)

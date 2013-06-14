@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/cegui/include \
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/include \
            -I$(top_srcdir)/cegui/include/WindowRendererSets/Falagard
 
 libCEGUIFalagardWRBase@cegui_bsfx@_la_LDFLAGS = @CEGUI_LIB_LINK_FLAGS@

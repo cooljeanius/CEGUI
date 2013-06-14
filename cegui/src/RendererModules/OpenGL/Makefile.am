@@ -1,10 +1,10 @@
-INCLUDES =
+AM_CPPFLAGS =
 
 if BUILD_USING_INTERNAL_GLEW
-INCLUDES += -I$(top_srcdir)/cegui/src/RendererModules/OpenGL/GLEW
+AM_CPPFLAGS += -I$(top_srcdir)/cegui/src/RendererModules/OpenGL/GLEW
 endif
 
-INCLUDES += -I$(top_srcdir)/cegui/include \
+AM_CPPFLAGS += -I$(top_srcdir)/cegui/include \
             -I$(top_srcdir)/cegui/include/RendererModules/OpenGL \
             $(OpenGL_CFLAGS)
 

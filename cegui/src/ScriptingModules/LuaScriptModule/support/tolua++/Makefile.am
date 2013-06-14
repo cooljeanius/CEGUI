@@ -1,4 +1,4 @@
-INCLUDES =  $(Lua_CFLAGS) \
+AM_CPPFLAGS =  $(Lua_CFLAGS) \
             -I$(top_srcdir)/cegui/include/ScriptingModules/LuaScriptModule/support/tolua++
 
 libCEGUItoluapp@cegui_bsfx@_la_LDFLAGS =

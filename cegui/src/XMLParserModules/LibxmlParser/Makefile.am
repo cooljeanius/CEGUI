@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/cegui/include \
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/include \
            -I$(top_srcdir)/cegui/include/XMLParserModules/LibxmlParser \
            $(libxml_CFLAGS)
 

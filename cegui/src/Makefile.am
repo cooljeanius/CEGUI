@@ -1,6 +1,6 @@
 SUBDIRS = . ImageCodecModules RendererModules ScriptingModules WindowRendererSets XMLParserModules
 
-INCLUDES = -I$(top_srcdir)/cegui/include $(freetype2_CFLAGS) $(pcre_CFLAGS) \
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/include $(freetype2_CFLAGS) $(pcre_CFLAGS) \
            $(fribidi_CFLAGS) $(ZLIB_CFLAGS)
 
 libCEGUIBase@cegui_bsfx@_la_LDFLAGS = @CEGUI_LIB_LINK_FLAGS@ \
@@ -225,7 +225,7 @@ libCEGUIBase@cegui_bsfx@_la_SOURCES += CEGUIMinizipResourceProvider.cpp minizip/
 endif
 
 if MACOSX_BUILD
-INCLUDES += -I$(top_srcdir)/src/implementations/mac
+AM_CPPFLAGS += -I$(top_srcdir)/src/implementations/mac
 libCEGUIBase@cegui_bsfx@_la_SOURCES += implementations/mac/macPlugins.cpp
 endif
 

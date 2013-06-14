@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/cegui/include -I$(top_srcdir)/Samples/common/include
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/include -I$(top_srcdir)/Samples/common/include
 
 noinst_PROGRAMS = FontDemo@cegui_bsfx@
 

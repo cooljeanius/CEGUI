@@ -18,3 +18,5 @@ libtool
 *xcuser*
 *xcworkspace*
 stamp-h*
+config.h
+confdefs.h

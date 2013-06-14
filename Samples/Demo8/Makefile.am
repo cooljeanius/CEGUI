@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/cegui/include \
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/include \
            -I$(top_srcdir)/Samples/common/include \
            -I$(top_srcdir)/cegui/include/ScriptingModules/LuaScriptModule
 

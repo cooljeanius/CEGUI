@@ -1,4 +1,4 @@
-INCLUDES = -I$(top_srcdir)/cegui/include \
+AM_CPPFLAGS = -I$(top_srcdir)/cegui/include \
            -I$(top_srcdir)/cegui/include/XMLParserModules/TinyXMLParser
 
 libCEGUITinyXMLParser@cegui_bsfx@_la_LDFLAGS = @CEGUI_LIB_LINK_FLAGS@
@@ -22,7 +22,7 @@ libCEGUITinyXMLParser@cegui_bsfx@_la_SOURCES += ceguitinyxml/tinystr.cpp \
                                     ceguitinyxml/tinyxmlerror.cpp \
                                     ceguitinyxml/tinyxmlparser.cpp
 else
-INCLUDES += $(tinyxml_CFLAGS)
+AM_CPPFLAGS += $(tinyxml_CFLAGS)
 libCEGUITinyXMLParser@cegui_bsfx@_la_LIBADD += $(tinyxml_LIBS)
 endif
 
