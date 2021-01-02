@@ -30,11 +30,31 @@
 #ifndef _CEGUIFreeTypeFont_h_
 #define _CEGUIFreeTypeFont_h_
 
+#include "config.h"
+
 #include "CEGUIFont.h"
 #include "CEGUIImage.h"
 #include "CEGUIDataContainer.h"
 
-#include <ft2build.h>
+#ifndef __has_include
+# defined __has_include(x) 0
+#endif
+
+#if defined(HAVE_FT2BUILD_H) || __has_include(<ft2build.h>)
+# include <ft2build.h>
+#else
+# if defined(HAVE_FREETYPE2_FT2BUILD_H) || __has_include(<freetype2/ft2build.h>)
+#  include <freetype2/ft2build.h>
+# else
+#  if defined(HAVE_DEVEL_FT2BUILD_H) || __has_include(<devel/ft2build.h>)
+#   include <devel/ft2build.h>
+#  else
+#   if defined(__GNUC__) && !defined(__STRICT_ANSI__)
+#    warning "CEGUIFreeTypeFont.h expects a freetype2 header to be included"
+#   endif /* __GNUC__ && !__STRICT_ANSI__ */
+#  endif /* HAVE_DEVEL_FT2BUILD_H */
+# endif /* HAVE_FREETYPE2_FT2BUILD_H */
+#endif /* HAVE_FT2BUILD_H */
 #include FT_FREETYPE_H
 
 // Start of CEGUI namespace section

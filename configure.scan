@@ -1,26 +1,20 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.69])
+AC_PREREQ([2.70])
 AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
-AC_CONFIG_SRCDIR([cegui/include/CEGUI.h])
+AC_CONFIG_SRCDIR([cegui/include/CEGUIRenderedStringWordWrapper.h])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CXX
-AC_PROG_AWK
 AC_PROG_CC
-AC_PROG_CPP
-AC_PROG_INSTALL
-AC_PROG_LN_S
-AC_PROG_MAKE_SET
-AC_PROG_RANLIB
 
 # Checks for libraries.
 
 # Checks for header files.
 AC_PATH_X
-AC_CHECK_HEADERS([inttypes.h limits.h malloc.h memory.h stddef.h stdint.h stdlib.h string.h sys/time.h unistd.h wchar.h])
+AC_CHECK_HEADERS([inttypes.h malloc.h stdint.h sys/time.h unistd.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL

@@ -5,4 +5,4 @@ EXTRA_DIST=bootstrap
 dist-hook:
 	mkdir $(distdir)/bin $(distdir)/lib
 
-ACLOCAL_AMFLAGS = -I m4
+ACLOCAL_AMFLAGS = -I m4 --install

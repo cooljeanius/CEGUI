@@ -7,6 +7,7 @@ libtool
 *.log
 *.o
 *.lo
+*.Plo
 *.la
 */*deps/*.*o
 */*/*deps/*.*o
@@ -20,3 +21,4 @@ libtool
 stamp-h*
 config.h
 confdefs.h
+conftest*

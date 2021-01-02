@@ -52,7 +52,7 @@
 /* #undef CEGUI_SAMPLES_USE_IRRLICHT */
 
 /* Define to have the Ogre renderer available in the samples */
-#define CEGUI_SAMPLES_USE_OGRE /**/
+/* #undef CEGUI_SAMPLES_USE_OGRE */
 
 /* Define to have the OpenGL CEGUI renderer available in the samples (requires
    glut) */
@@ -62,7 +62,7 @@
 #define CEGUI_TINYXML_H "ceguitinyxml/tinyxml.h"
 
 /* Set this if your tiny xml version is 2.6 or higher */
-/* #undef CEGUI_TINYXML_HAS_2_6_API */
+#define CEGUI_TINYXML_HAS_2_6_API 1
 
 /* Set this to the name of the tinyxml namespace */
 #define CEGUI_TINYXML_NAMESPACE CEGUITinyXML
@@ -85,11 +85,20 @@
 /* define if the Boost::Python library is available */
 /* #undef HAVE_BOOST_PYTHON */
 
+/* Define to 1 if you have the <devel/ft2build.h> header file. */
+/* #undef HAVE_DEVEL_FT2BUILD_H */
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 
 /* Define to 1 if you have the `floor' function. */
 #define HAVE_FLOOR 1
+
+/* Define to 1 if you have the <freetype2/ft2build.h> header file. */
+/* #undef HAVE_FREETYPE2_FT2BUILD_H */
+
+/* Define to 1 if you have the <ft2build.h> header file. */
+/* #undef HAVE_FT2BUILD_H */
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
@@ -116,14 +125,14 @@
 /* Define to 1 if you have the <malloc.h> header file. */
 /* #undef HAVE_MALLOC_H */
 
+/* Define to 1 if you have the <malloc/malloc.h> header file. */
+#define HAVE_MALLOC_MALLOC_H 1
+
 /* Define to 1 if you have the `memchr' function. */
 #define HAVE_MEMCHR 1
 
 /* Define to 1 if you have the `memmove' function. */
 #define HAVE_MEMMOVE 1
-
-/* Define to 1 if you have the <memory.h> header file. */
-#define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the `memset' function. */
 #define HAVE_MEMSET 1
@@ -157,13 +166,16 @@
 #define HAVE_SQRT 1
 
 /* Define to 1 if stdbool.h conforms to C99. */
-/* #undef HAVE_STDBOOL_H */
+#define HAVE_STDBOOL_H 1
 
 /* Define to 1 if you have the <stddef.h> header file. */
 #define HAVE_STDDEF_H 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#define HAVE_STDIO_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
@@ -223,8 +235,7 @@
 /* Define to 1 if the system has the type `_Bool'. */
 #define HAVE__BOOL 1
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
 
 /* Name of package */
@@ -248,11 +259,10 @@
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.7.9"
 
-/* Define to 1 if you have the ANSI C header files. */
+/* Define to 1 if all of the C90 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
 #define STDC_HEADERS 1
-
-/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
-#define TIME_WITH_SYS_TIME 1
 
 /* Define to 1 if your <sys/time.h> declares `struct tm'. */
 /* #undef TM_IN_SYS_TIME */

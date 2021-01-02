@@ -1,51 +1,56 @@
-AC_PREREQ([2.59])
+AC_PREREQ([2.70])dnl
 
-dnl Define the sub-version numbers for this release
-dnl
-dnl now done like this to save repetition, and make it more explicit where
-dnl we should define these numbers (we could pick up the same info by other means
-dnl though this leaves nobody in any doubt about where this is being defined).
-m4_define([CEGUI_MAJ_VER], 0)
-m4_define([CEGUI_MIN_VER], 7)
-m4_define([CEGUI_REL_VER], 9)
+dnl# Define the sub-version numbers for this release
+dnl#
+dnl# now done like this to save repetition, and make it more explicit where
+dnl# we should define these numbers (we could pick up the same info by other
+dnl# means, though this leaves nobody in any doubt about where this is being
+dnl# defined).
+m4_define([CEGUI_MAJ_VER],[0])
+m4_define([CEGUI_MIN_VER],[7])
+m4_define([CEGUI_REL_VER],[9])dnl
 
-dnl Construct the final version number out of the sub-version values specified above
-m4_define([CEGUI_RELEASE_VERSION], [CEGUI_MAJ_VER.CEGUI_MIN_VER.CEGUI_REL_VER])
+dnl# Construct the final version number out of the sub-version values
+dnl# specified above:
+m4_define([CEGUI_RELEASE_VERSION],[CEGUI_MAJ_VER.CEGUI_MIN_VER.CEGUI_REL_VER])
 
-AC_INIT([CEGUI], [CEGUI_RELEASE_VERSION], [http://mantis.cegui.org.uk/], [CEGUI])
+AC_INIT([CEGUI],[CEGUI_RELEASE_VERSION],[http://mantis.cegui.org.uk/],[CEGUI])
 AC_CONFIG_SRCDIR([cegui/src/CEGUIBase.cpp])
-AM_INIT_AUTOMAKE([foreign dist-zip tar-ustar])
+AC_CONFIG_AUX_DIR([build-aux])
+AM_INIT_AUTOMAKE([foreign dist-zip tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS([cegui/include/config.h])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CANONICAL_HOST
 
 # Checks for programs.
+AC_MSG_CHECKING([programs])
+AC_MSG_RESULT([ ])
 AC_PROG_CXX
-AC_PROG_AWK
 AC_PROG_CC
 AC_PROG_CPP
 AC_PROG_INSTALL
 AC_PROG_LN_S
-AC_PROG_MAKE_SET
-AC_PROG_RANLIB
+if test "x${RANLIB}" = "x"; then
+  test -z "${RANLIB}"
+  AC_PROG_RANLIB
+else
+  test -n "${RANLIB}" && test -x "${RANLIB}" && export RANLIB
+fi
 
-AC_CHECK_PROG([DOXYGEN], [doxygen], [doxygen], [])
-AC_CHECK_PROG([DOXYGENDOT], [dot], [dot], [])
+AC_CHECK_PROG([DOXYGEN],[doxygen],[doxygen],[])
+AC_CHECK_PROG([DOXYGENDOT],[dot],[dot],[])dnl
 
 PKG_PROG_PKG_CONFIG
-if test -z "$PKG_CONFIG"; then
+if test -z "${PKG_CONFIG}"; then
     AC_MSG_ERROR([pkg-config was not found.  Please ensure pkg-config is installed and / or set the PKG_CONFIG variable])
 fi
 
 # Disable building static library
 AC_DISABLE_STATIC
 
-# We want DLLs on Win32 platform
-AC_LIBTOOL_WIN32_DLL
-
-# Initialise libtool
-AM_PROG_LIBTOOL
+# Initialise libtool (we want DLLs on Win32 platform)
+LT_INIT([win32-dll disable-static dlopen])dnl
 
 # Setup some stuff depending on the system we're running on
 case $host_os in
@@ -53,22 +58,27 @@ case $host_os in
                 cegui_pc_platform_libs=-lwinmm
                 ;;
      *darwin* ) MACOSX=yes
-                cegui_pc_platform_libs=
+                cegui_pc_platform_libs=""
                 ;;
             * ) MINGW32=no
-                cegui_pc_platform_libs=
+                cegui_pc_platform_libs=""
                 ;;
 esac
 
-AC_SUBST(cegui_pc_platform_libs)
+AC_SUBST([cegui_pc_platform_libs])dnl
 
-AM_CONDITIONAL([MINGW32_BUILD], [test x$MINGW32 = xyes])
-AM_CONDITIONAL([MACOSX_BUILD], [test x$MACOSX = xyes])
+AM_CONDITIONAL([MINGW32_BUILD],[test "x${MINGW32}" = "xyes"])
+AM_CONDITIONAL([MACOSX_BUILD],[test "x${MACOSX}" = "xyes"])dnl
 
 # Checks for libraries (skip on mingw32).
-if test x$MINGW32 != xyes; then
-    AC_CHECK_LIB([dl], [dlopen])
-    AC_CHECK_LIB([pthread], [pthread_create],, AC_MSG_ERROR([cannot find pthread library]))
+AC_MSG_CHECKING([libraries])
+AC_MSG_RESULT([ ])
+if test "x${MINGW32}" != "xyes"; then
+    AC_CHECK_LIB([dl],[dlclose],[],[
+      AC_CHECK_LIB([dl],[dlsym])
+    ])
+    AC_CHECK_LIB([pthread],[pthread_create],[],
+                 [AC_MSG_ERROR([cannot find pthread library])])
 fi
 
 CEGUI_CODE_OPTIONS
@@ -80,12 +90,40 @@ CEGUI_CHECK_XML_PARSERS
 CEGUI_CHECK_IMAGE_CODECS
 
 # Checks for header files.
-AC_HEADER_STDC
+AC_MSG_CHECKING([headers])
+AC_MSG_RESULT([ ])
+dnl# autoupdate says:
+dnl# The preprocessor macro `STDC_HEADERS' is obsolete.
+dnl# Except in unusual embedded environments, you can safely include all
+dnl# ISO C90 headers unconditionally.
+# Autoupdate added the next few lines to ensure that your configure
+# script's behavior did not change.  They are probably safe to remove.
+AC_CHECK_INCLUDES_DEFAULT
+if test "x${EGREP}" = "x"; then
+  test -z "${EGREP}"
+  AC_PROG_EGREP
+fi
 AC_PATH_X
-AC_CHECK_HEADERS([limits.h locale.h malloc.h stddef.h stdlib.h string.h sys/time.h wchar.h])
+AC_HEADER_STDBOOL
+AC_CHECK_HEADERS([limits.h locale.h malloc.h malloc/malloc.h stddef.h \
+                  stdlib.h string.h sys/time.h wchar.h])dnl
+
+if test "x${ac_cv_header_inttypes_h}" = "x"; then
+  test -z "${ac_cv_header_inttypes_h}"
+  AC_CHECK_HEADERS([inttypes.h])
+fi
+if test "x${ac_cv_header_stdint_h}" = "x"; then
+  test -z "${ac_cv_header_stdint_h}"
+  AC_CHECK_HEADERS([stdint.h])
+fi
+if test "x${ac_cv_header_unistd_h}" = "x"; then
+  test -z "${ac_cv_header_unistd_h}"
+  AC_CHECK_HEADERS([unistd.h])
+fi
 
 # Checks for typedefs, structures, and compiler characteristics.
-AC_HEADER_STDBOOL
+AC_MSG_CHECKING([typedefs, structures, and compiler characteristics])
+AC_MSG_RESULT([ ])
 AC_C_CONST
 AC_C_INLINE
 AC_TYPE_INT32_T
@@ -94,9 +132,11 @@ AC_TYPE_SIZE_T
 AC_TYPE_UINT64_T
 AC_STRUCT_TM
 AC_C_VOLATILE
-AC_CHECK_TYPES([ptrdiff_t])
+AC_CHECK_TYPES([ptrdiff_t])dnl
 
 # Checks for library functions.
+AC_MSG_CHECKING([functions])
+AC_MSG_RESULT([ ])
 AC_FUNC_ERROR_AT_LINE
 AC_FUNC_MALLOC
 AC_FUNC_MEMCMP
@@ -104,14 +144,22 @@ AC_FUNC_MKTIME
 AC_FUNC_REALLOC
 AC_FUNC_STRCOLL
 AC_FUNC_STRFTIME
-AC_CHECK_FUNCS([atexit floor gettimeofday memchr memmove memset pow regcomp select setenv setlocale sqrt strchr strcspn strerror strpbrk strrchr strtol strtoul])
+AC_CHECK_FUNCS([atexit floor gettimeofday memchr memmove memset pow regcomp \
+                select setenv setlocale sqrt strchr strcspn strerror strpbrk \
+                strrchr strtol strtoul])dnl
 
 # check for renderers
+AC_MSG_CHECKING([renderers])
+AC_MSG_RESULT([ ])
 CEGUI_ENABLE_OPENGL_RENDERER
 CEGUI_ENABLE_OGRE_RENDERER
 CEGUI_ENABLE_NULL_RENDERER
 CEGUI_ENABLE_IRRLICHT_RENDERER
 CEGUI_ENABLE_DIRECTFB_RENDERER
+
+# ...and stuff:
+AC_MSG_CHECKING([miscellaneous other thing])
+AC_MSG_RESULT([ ])
 
 # decide whether to use gtk dialog in samples
 CEGUI_CHECK_GTK_FOR_SAMPLES
@@ -135,7 +183,7 @@ CEGUI_LIBTOOL_OPTIONS
 CEGUI_CHECK_BUILD_SUFFIX
 CEGUI_CHECK_STATIC
 
-dnl Create the makefiles
+dnl# Create the makefiles
 AC_CONFIG_FILES([cegui/CEGUI-NULL.pc
                  cegui/CEGUI-OGRE.pc
                  cegui/CEGUI-OPENGL.pc
@@ -231,11 +279,11 @@ AC_CONFIG_FILES([cegui/CEGUI-NULL.pc
                  Makefile])
 AC_OUTPUT
 
-dnl Now generate some output to summarise what we have done here
-echo
-echo "********************************************************************************"
+dnl# Now generate some output to summarise what we have done here
+echo ""
+echo "************************************************************************"
 echo "* Crazy Eddie's GUI System - Configuration Results Summary"
-echo "********************************************************************************"
+echo "************************************************************************"
 echo "* Library Release Version:                              CEGUI_RELEASE_VERSION"
 echo "*"
 echo "* Code options:"
@@ -332,7 +380,7 @@ echo "*         OpenGL Renderer available in samples:         ${cegui_samples_us
 echo "*         Irrlicht Renderer available in samples:       ${cegui_samples_use_irrlicht-no}"
 echo "*         DirectFB Renderer available in samples:       ${cegui_samples_use_directfb-no}"
 echo "*         Ogre3D Renderer available in samples:         ${cegui_samples_use_ogre-no}"
-echo "********************************************************************************"
+echo "************************************************************************"
 echo
 echo "Now you can do make && make install.  Good Luck!"
 echo

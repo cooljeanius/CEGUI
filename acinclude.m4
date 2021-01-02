@@ -1,5 +1,5 @@
 AC_DEFUN([CEGUI_CODE_OPTIONS], [
-    AC_ARG_ENABLE([debug], AC_HELP_STRING([--enable-debug], [Enable building CEGUI in debugging mode.]),
+    AC_ARG_ENABLE([debug], AS_HELP_STRING([--enable-debug],[Enable building CEGUI in debugging mode.]),
         [cegui_enable_debug=$enableval], [cegui_enable_debug=no])
     dnl Code options debug
     if test x$cegui_enable_debug = xyes ; then
@@ -8,7 +8,7 @@ AC_DEFUN([CEGUI_CODE_OPTIONS], [
 ])
 
 AC_DEFUN([CEGUI_CHECK_WANTS_SAMPLES],[
-    AC_ARG_ENABLE([samples], AC_HELP_STRING([--disable-samples], [Disable building of samples framework and applications.]),
+    AC_ARG_ENABLE([samples], AS_HELP_STRING([--disable-samples],[Disable building of samples framework and applications.]),
         [cegui_enable_samples=$enableval],[cegui_enable_samples=yes])
 
     if test x$cegui_enable_samples = xyes; then
@@ -31,7 +31,7 @@ AC_DEFUN([CEGUI_CHECK_WANTS_SAMPLES],[
 
 AC_DEFUN([CEGUI_CHECK_GTK_FOR_SAMPLES],[
     PKG_CHECK_MODULES(GTK, gtk+-2.0 >= 2.4, [cegui_found_gtk=yes], [cegui_found_gtk=no])
-    AC_ARG_WITH([gtk2], AC_HELP_STRING([--with-gtk2], [Enables the use of a GTK2 based dialog to select a renderer in the samples]),
+    AC_ARG_WITH([gtk2], AS_HELP_STRING([--with-gtk2],[Enables the use of a GTK2 based dialog to select a renderer in the samples]),
                 [cegui_with_gtk=$withval], [cegui_with_gtk=no])
 
     if test x$cegui_found_gtk = xyes && test x$cegui_with_gtk = xyes; then
@@ -59,7 +59,7 @@ AC_DEFUN([CEGUI_CHECK_XML_PARSERS],[
     CEGUI_CHECK_RAPIDXML(rapidxml, [cegui_found_rapidxml=yes], [cegui_found_rapidxml=no])
 
     dnl Make some decisions about how to go about using TinyXML
-    AC_ARG_ENABLE([external-tinyxml], AC_HELP_STRING([--disable-external-tinyxml], [Disables the use of any external tinyxml library, forcing the use of the version that accompanies CEGUI.]),
+    AC_ARG_ENABLE([external-tinyxml], AS_HELP_STRING([--disable-external-tinyxml],[Disables the use of any external tinyxml library, forcing the use of the version that accompanies CEGUI.]),
             [cegui_use_external_tinyxml=$enableval], [cegui_use_external_tinyxml=yes])
 
     if test x$cegui_use_external_tinyxml = xyes; then
@@ -80,23 +80,23 @@ AC_DEFUN([CEGUI_CHECK_XML_PARSERS],[
     fi
 
     dnl Find out what user disabled as far as parsers go
-    AC_ARG_ENABLE([xerces-c], AC_HELP_STRING([--disable-xerces-c], [Disables building of the Xerces-C++ XML parser module.]),
+    AC_ARG_ENABLE([xerces-c], AS_HELP_STRING([--disable-xerces-c],[Disables building of the Xerces-C++ XML parser module.]),
                 [cegui_with_xerces=$enableval], [cegui_with_xerces=yes])
 
-    AC_ARG_ENABLE([libxml], AC_HELP_STRING([--disable-libxml], [Disables building of the libxml XML parser module.]),
+    AC_ARG_ENABLE([libxml], AS_HELP_STRING([--disable-libxml],[Disables building of the libxml XML parser module.]),
                 [cegui_with_libxml=$enableval], [cegui_with_libxml=yes])
 
-    AC_ARG_ENABLE([expat], AC_HELP_STRING([--disable-expat], [Disables building of the expat XML parser module.]),
+    AC_ARG_ENABLE([expat], AS_HELP_STRING([--disable-expat],[Disables building of the expat XML parser module.]),
                 [cegui_with_expat=$enableval], [cegui_with_expat=yes])
 
-    AC_ARG_ENABLE([rapidxml], AC_HELP_STRING([--disable-rapidxml], [Disables building of the RapidXML parser module.]),
+    AC_ARG_ENABLE([rapidxml], AS_HELP_STRING([--disable-rapidxml],[Disables building of the RapidXML parser module.]),
                 [cegui_with_rapidxml=$enableval], [cegui_with_rapidxml=yes])
 
-    AC_ARG_ENABLE([tinyxml], AC_HELP_STRING([--disable-tinyxml], [Disables building of the tinyXML parser module.]),
+    AC_ARG_ENABLE([tinyxml], AS_HELP_STRING([--disable-tinyxml],[Disables building of the tinyXML parser module.]),
                 [cegui_with_tinyxml=$enableval], [cegui_with_tinyxml=yes])
 
     dnl Find out which paser user wants as a default
-    AC_ARG_WITH([default-xml-parser], AC_HELP_STRING([--with-default-xml-parser[=PARSER]], [Sets the default XML parser module.
+    AC_ARG_WITH([default-xml-parser], AS_HELP_STRING([--with-default-xml-parser[=PARSER]],[Sets the default XML parser module.
 Typically this will be one of XercesParser, ExpatParser, LibxmlParser, RapidXMLParser or TinyXMLParser, though you can set it to anything to
 load a custom made parser module as the default.]),
                 [cegui_default_parser=$withval], [cegui_default_parser=none])
@@ -196,21 +196,21 @@ load a custom made parser module as the default.]),
 ])
 
 AC_DEFUN([CEGUI_CHECK_IMAGE_CODECS], [
-    AC_ARG_ENABLE([corona], AC_HELP_STRING([--enable-corona], [Enable Corona based ImageCodec module (auto)]),
+    AC_ARG_ENABLE([corona], AS_HELP_STRING([--enable-corona],[Enable Corona based ImageCodec module (auto)]),
         [cegui_with_corona=$enableval], [cegui_with_corona=yes])
-    AC_ARG_WITH(corona-prefix, AC_HELP_STRING([--with-corona-prefix], [Prefix where corona is installed (optional)]),
+    AC_ARG_WITH(corona-prefix, AS_HELP_STRING([--with-corona-prefix],[Prefix where corona is installed (optional)]),
         [cegui_corona_prefix="$withval"], [cegui_corona_prefix=""])
-    AC_ARG_ENABLE([devil], AC_HELP_STRING([--enable-devil], [Enable DevIL based ImageCodec module (auto)]),
+    AC_ARG_ENABLE([devil], AS_HELP_STRING([--enable-devil],[Enable DevIL based ImageCodec module (auto)]),
         [cegui_with_devil=$enableval], [cegui_with_devil=yes])
-    AC_ARG_ENABLE([freeimage], AC_HELP_STRING([--enable-freeimage], [Enable FreeImage based ImageCodec module (auto)]),
+    AC_ARG_ENABLE([freeimage], AS_HELP_STRING([--enable-freeimage],[Enable FreeImage based ImageCodec module (auto)]),
         [cegui_with_freeimage=$enableval], [cegui_with_freeimage=yes])
-    AC_ARG_ENABLE([silly], AC_HELP_STRING([--enable-silly], [Enable SILLY based ImageCodec module (auto)]),
+    AC_ARG_ENABLE([silly], AS_HELP_STRING([--enable-silly],[Enable SILLY based ImageCodec module (auto)]),
         [cegui_with_silly=$enableval], [cegui_with_silly=yes])
-    AC_ARG_ENABLE([tga], AC_HELP_STRING([--enable-tga], [Enable basic TGA loading ImageCodec module (auto)]),
+    AC_ARG_ENABLE([tga], AS_HELP_STRING([--enable-tga],[Enable basic TGA loading ImageCodec module (auto)]),
         [cegui_with_tga=$enableval], [cegui_with_tga=yes])
-    AC_ARG_ENABLE([stb], AC_HELP_STRING([--enable-stb], [Enable STB based ImageCodec module (auto)]),
+    AC_ARG_ENABLE([stb], AS_HELP_STRING([--enable-stb],[Enable STB based ImageCodec module (auto)]),
         [cegui_with_stb=$enableval], [cegui_with_stb=yes])
-    AC_ARG_WITH([default-image-codec], AC_HELP_STRING([--with-default-image-codec[=CODEC]], [Sets the default image codec.
+    AC_ARG_WITH([default-image-codec], AS_HELP_STRING([--with-default-image-codec[=CODEC]],[Sets the default image codec.
 Typically this will be one of TGAImageCodec, SILLYImageCodec, CoronaImageCodec, FreeImageImageCodec, DevILImageCodec or STBImageCodec,
 though you can set it to anything to load a custom made image codec module as the default.]),
     [cegui_default_image_codec=$withval], [cegui_default_image_codec=none])
@@ -361,16 +361,14 @@ though you can set it to anything to load a custom made image codec module as th
 ])
 
 AC_DEFUN([CEGUI_ENABLE_NULL_RENDERER], [
-    AC_ARG_ENABLE([null-renderer], AC_HELP_STRING([--enable-null-renderer],
-                  [Enable building the Null renderer module]),
+    AC_ARG_ENABLE([null-renderer], AS_HELP_STRING([--enable-null-renderer],[Enable building the Null renderer module]),
                   [cegui_enable_null=$enableval], [cegui_enable_null=no])
 
     AM_CONDITIONAL([BUILD_NULL_RENDERER], [test x$cegui_enable_null = xyes])
 ])
 
 AC_DEFUN([CEGUI_ENABLE_OGRE_RENDERER], [
-    AC_ARG_ENABLE([ogre-renderer], AC_HELP_STRING([--disable-ogre-renderer],
-                  [Disable building the Ogre renderer module]),
+    AC_ARG_ENABLE([ogre-renderer], AS_HELP_STRING([--disable-ogre-renderer],[Disable building the Ogre renderer module]),
                   [cegui_enable_ogre=$enableval], [cegui_enable_ogre=yes])
 
     PKG_CHECK_MODULES(Ogre, OGRE >= 1.6.0, [cegui_found_ogre=yes], [cegui_found_ogre=no])
@@ -424,8 +422,7 @@ AC_DEFUN([CEGUI_ENABLE_OGRE_RENDERER], [
 AC_DEFUN([CEGUI_ENABLE_DIRECTFB_RENDERER], [
     PKG_CHECK_MODULES(directfb, directfb >= 1.2.0, [cegui_found_directfb=yes], [cegui_found_directfb=no])
     AC_ARG_ENABLE([directfb-renderer],
-                  AC_HELP_STRING([--enable-directfb-renderer],
-                                 [Enable the DirectFB renderer.  This renderer
+                  AS_HELP_STRING([--enable-directfb-renderer],[Enable the DirectFB renderer.  This renderer
                                   is currently broken and incomplete; it should
                                   only be enabled for development and/or testing
                                   purposes.]),
@@ -456,7 +453,7 @@ AC_DEFUN([CEGUI_ENABLE_DIRECTFB_RENDERER], [
 AC_DEFUN([CEGUI_ENABLE_IRRLICHT_RENDERER], [
     CEGUI_CHECK_IRRLICHT(Irrlicht, [cegui_found_irr=yes], [cegui_found_irr=no])
     AC_CHECK_LIB([Xxf86vm], XF86VidModeQueryVersion, [cegui_found_xf86vm=yes], [cegui_found_xf86vm=no])
-    AC_ARG_ENABLE([irrlicht-renderer], AC_HELP_STRING([--disable-irrlicht-renderer], [Disable the Irrlicht renderer]),
+    AC_ARG_ENABLE([irrlicht-renderer], AS_HELP_STRING([--disable-irrlicht-renderer],[Disable the Irrlicht renderer]),
         [cegui_enable_irr=$enableval],[cegui_enable_irr=yes])
 
     dnl decide if we will actually build the Irrlicht Renderer
@@ -493,9 +490,9 @@ AC_DEFUN([CEGUI_ENABLE_IRRLICHT_RENDERER], [
 # checks for Irrlicht headers and libs in some common places.
 AC_DEFUN([CEGUI_CHECK_IRRLICHT],[
     AC_LANG_PUSH([C++])
-    AC_ARG_WITH([irrlicht-incdir], AC_HELP_STRING([--with-irrlicht-incdir=DIR], [Optionally specifies location of the Irrlicht includes]),
+    AC_ARG_WITH([irrlicht-incdir], AS_HELP_STRING([--with-irrlicht-incdir=DIR],[Optionally specifies location of the Irrlicht includes]),
         [cegui_irr_incdir=$withval],[cegui_irr_incdir=[.]])
-    AC_ARG_WITH([irrlicht-libdir], AC_HELP_STRING([--with-irrlicht-libdir=DIR], [Optionally specifies location of the Irrlicht libraries]),
+    AC_ARG_WITH([irrlicht-libdir], AS_HELP_STRING([--with-irrlicht-libdir=DIR],[Optionally specifies location of the Irrlicht libraries]),
         [cegui_irr_libdir=$withval],[cegui_irr_libdir=[.]])
     cegui_lib_paths="$cegui_irr_libdir"
     cegui_inc_paths="$cegui_irr_incdir /usr/local/include/irrlicht /usr/include/irrlicht /usr/local/include /usr/include"
@@ -587,7 +584,7 @@ AC_DEFUN([CEGUI_CHECK_IRRLICHT],[
 ])
 
 AC_DEFUN([CEGUI_ENABLE_OPENGL_RENDERER], [
-    AC_ARG_ENABLE([opengl-renderer], AC_HELP_STRING([--disable-opengl-renderer], [Disable the OpenGL renderer]),
+    AC_ARG_ENABLE([opengl-renderer], AS_HELP_STRING([--disable-opengl-renderer],[Disable the OpenGL renderer]),
         [cegui_enable_opengl=$enableval], [cegui_enable_opengl=yes])
 
     cegui_saved_LIBS="$LIBS"
@@ -634,7 +631,7 @@ AC_DEFUN([CEGUI_ENABLE_OPENGL_RENDERER], [
     esac
 
     dnl Deal with possibility / option for external GLEW lib
-    AC_ARG_ENABLE([external-glew], AC_HELP_STRING([--disable-external-glew], [Disables the use of any external GLEW library, forcing the use of the version that accompanies CEGUI.]),
+    AC_ARG_ENABLE([external-glew], AS_HELP_STRING([--disable-external-glew],[Disables the use of any external GLEW library, forcing the use of the version that accompanies CEGUI.]),
         [cegui_use_external_glew=$enableval], [cegui_use_external_glew=yes])
     if test x$cegui_use_external_glew = xyes; then
         CEGUI_CHECK_GLEW([GLEW],
@@ -681,9 +678,9 @@ AC_DEFUN([CEGUI_ENABLE_OPENGL_RENDERER], [
 # CEGUI_CHECK_XERCES(variable, [action-if-found], [action-if-not-found])
 # checks for xerces-c++ headers and libs in some common places.
 AC_DEFUN([CEGUI_CHECK_XERCES],[
-    AC_ARG_WITH([xerces-incdir], AC_HELP_STRING([--with-xerces-incdir=DIR], [Optionally specifies location of the xerces-c++ includes]),
+    AC_ARG_WITH([xerces-incdir], AS_HELP_STRING([--with-xerces-incdir=DIR],[Optionally specifies location of the xerces-c++ includes]),
         [cegui_xerces_incdir=$withval],[cegui_xerces_incdir=[.]])
-    AC_ARG_WITH([xerces-libdir], AC_HELP_STRING([--with-xerces-libdir=DIR], [Optionally specifies location of the xerces-c++ library]),
+    AC_ARG_WITH([xerces-libdir], AS_HELP_STRING([--with-xerces-libdir=DIR],[Optionally specifies location of the xerces-c++ library]),
         [cegui_xerces_libdir=$withval],[cegui_xerces_libdir=[.]])
     cegui_lib_paths="$cegui_xerces_libdir"
     cegui_inc_paths="$cegui_xerces_incdir /usr/local/include/xerces /usr/include/xerces /usr/local/include /usr/include"
@@ -731,9 +728,9 @@ AC_DEFUN([CEGUI_CHECK_XERCES],[
 # CEGUI_CHECK_EXPAT(variable, [action-if-found], [action-if-not-found])
 # checks for expat headers and libs in some common places.
 AC_DEFUN([CEGUI_CHECK_EXPAT],[
-    AC_ARG_WITH([expat-incdir], AC_HELP_STRING([--with-expat-incdir=DIR], [Optionally specifies location of the expat-c++ includes]),
+    AC_ARG_WITH([expat-incdir], AS_HELP_STRING([--with-expat-incdir=DIR],[Optionally specifies location of the expat-c++ includes]),
         [cegui_expat_incdir=$withval],[cegui_expat_incdir=[.]])
-    AC_ARG_WITH([expat-libdir], AC_HELP_STRING([--with-expat-libdir=DIR], [Optionally specifies location of the expat-c++ library]),
+    AC_ARG_WITH([expat-libdir], AS_HELP_STRING([--with-expat-libdir=DIR],[Optionally specifies location of the expat-c++ library]),
         [cegui_expat_libdir=$withval],[cegui_expat_libdir=[.]])
     cegui_lib_paths="$cegui_expat_libdir"
     cegui_inc_paths="$cegui_expat_incdir /usr/local/include/expat /usr/include/expat /usr/local/include /usr/include"
@@ -781,7 +778,7 @@ AC_DEFUN([CEGUI_CHECK_EXPAT],[
 # CEGUI_CHECK_RAPIDXML(variable, [action-if-found], [action-if-not-found])
 # checks for RapidXML headers in some common places.
 AC_DEFUN([CEGUI_CHECK_RAPIDXML],[
-    AC_ARG_WITH([rapidxml-incdir], AC_HELP_STRING([--with-rapidxml-incdir=DIR], [Optionally specifies location of the RapidXML header files.]),
+    AC_ARG_WITH([rapidxml-incdir], AS_HELP_STRING([--with-rapidxml-incdir=DIR],[Optionally specifies location of the RapidXML header files.]),
         [cegui_rapidxml_incdir=$withval],[cegui_rapidxml_incdir=[.]])
     cegui_inc_paths="$cegui_rapidxml_incdir /usr/local/include/rapidxml /usr/include/rapidxml /usr/local/include /usr/include"
 
@@ -831,12 +828,11 @@ AC_DEFUN([CEGUI_CHECK_LUA],[
                         [cegui_found_lua=no])
     fi
 
-    AC_ARG_ENABLE([lua-module], AC_HELP_STRING([--disable-lua-module], [Disables building of the Lua scripting module.]),
+    AC_ARG_ENABLE([lua-module], AS_HELP_STRING([--disable-lua-module],[Disables building of the Lua scripting module.]),
                 [cegui_with_lua=$enableval], [cegui_with_lua=yes])
-    AC_ARG_ENABLE([toluacegui], AC_HELP_STRING([--enable-toluacegui], [Enables building of our custom tolua++ based binding generator tool, tolua++cegui.]),
+    AC_ARG_ENABLE([toluacegui], AS_HELP_STRING([--enable-toluacegui],[Enables building of our custom tolua++ based binding generator tool, tolua++cegui.]),
                 [cegui_build_toluatool=$enableval], [cegui_build_toluatool=no])
-    AC_ARG_ENABLE([safe-lua-module], AC_HELP_STRING([--enable-safe-lua-module],
-                                                    [Enable building the Lua binding with extra safety checks
+    AC_ARG_ENABLE([safe-lua-module], AS_HELP_STRING([--enable-safe-lua-module],[Enable building the Lua binding with extra safety checks
                                                      enabled at the expense of size and speed.  If you build
                                                      with debug enabled, these checks are also enabled
                                                      automatically.]),
@@ -851,7 +847,7 @@ AC_DEFUN([CEGUI_CHECK_LUA],[
         fi
 
         dnl Decide which tolua++ library to use
-        AC_ARG_ENABLE([external-toluapp], AC_HELP_STRING([--disable-external-toluapp], [Disables the use of any external tolua++ library, forcing the use of the version that accompanies CEGUI.]),
+        AC_ARG_ENABLE([external-toluapp], AS_HELP_STRING([--disable-external-toluapp],[Disables the use of any external tolua++ library, forcing the use of the version that accompanies CEGUI.]),
                 [cegui_use_external_tolua=$enableval], [cegui_use_external_tolua=yes])
 
         if test x$cegui_use_external_tolua = xyes; then
@@ -889,9 +885,9 @@ AC_DEFUN([CEGUI_CHECK_LUA],[
 # CEGUI_CHECK_TOLUAPP(variable, [action-if-found], [action-if-not-found])
 # Checks for an installed copy of the tolua++ library
 AC_DEFUN([CEGUI_CHECK_TOLUAPP],[
-    AC_ARG_WITH([tolua++-incdir], AC_HELP_STRING([--with-tolua++-incdir=DIR], [Optionally specifies location of the tolua++ includes]),
+    AC_ARG_WITH([tolua++-incdir], AS_HELP_STRING([--with-tolua++-incdir=DIR],[Optionally specifies location of the tolua++ includes]),
         [cegui_tolua_incdir=$withval],[cegui_tolua_incdir=[.]])
-    AC_ARG_WITH([tolua++-libdir], AC_HELP_STRING([--with-tolua++-libdir=DIR], [Optionally specifies location of the tolua++ library]),
+    AC_ARG_WITH([tolua++-libdir], AS_HELP_STRING([--with-tolua++-libdir=DIR],[Optionally specifies location of the tolua++ library]),
         [cegui_tolua_libdir=$withval],[cegui_tolua_libdir=[.]])
 
     cegui_lib_paths="$cegui_tolua_libdir"
@@ -946,9 +942,9 @@ AC_DEFUN([CEGUI_CHECK_TOLUAPP],[
 # CEGUI_CHECK_TINYXML(variable, [action-if-found], [action-if-not-found])
 # Checks for an installed copy of the TinyXML
 AC_DEFUN([CEGUI_CHECK_TINYXML],[
-    AC_ARG_WITH([tinyxml-incdir], AC_HELP_STRING([--with-tinyxml-incdir=DIR], [Optionally specifies location of the tinyxml includes]),
+    AC_ARG_WITH([tinyxml-incdir], AS_HELP_STRING([--with-tinyxml-incdir=DIR],[Optionally specifies location of the tinyxml includes]),
         [cegui_tinyxml_incdir=$withval],[cegui_tinyxml_incdir=[.]])
-    AC_ARG_WITH([tinyxml-libdir], AC_HELP_STRING([--with-tinyxml-libdir=DIR], [Optionally specifies location of the tinyxml library]),
+    AC_ARG_WITH([tinyxml-libdir], AS_HELP_STRING([--with-tinyxml-libdir=DIR],[Optionally specifies location of the tinyxml library]),
         [cegui_tinyxml_libdir=$withval],[cegui_tinyxml_libdir=[.]])
 
     AC_LANG_PUSH([C++])
@@ -1001,9 +997,9 @@ AC_DEFUN([CEGUI_CHECK_TINYXML],[
 # CEGUI_CHECK_GLEW(variable, [action-if-found], [action-if-not-found])
 # Checks for an installed copy of GLEW
 AC_DEFUN([CEGUI_CHECK_GLEW],[
-    AC_ARG_WITH([glew-incdir], AC_HELP_STRING([--with-glew-incdir=DIR], [Optionally specifies location of the GL/glew.h headers]),
+    AC_ARG_WITH([glew-incdir], AS_HELP_STRING([--with-glew-incdir=DIR],[Optionally specifies location of the GL/glew.h headers]),
         [cegui_glew_incdir=$withval],[cegui_glew_incdir=[.]])
-    AC_ARG_WITH([glew-libdir], AC_HELP_STRING([--with-glew-libdir=DIR], [Optionally specifies location of the glew library]),
+    AC_ARG_WITH([glew-libdir], AS_HELP_STRING([--with-glew-libdir=DIR],[Optionally specifies location of the glew library]),
         [cegui_glew_libdir=$withval],[cegui_glew_libdir=[.]])
 
     AC_LANG_PUSH([C])
@@ -1056,12 +1052,10 @@ AC_DEFUN([CEGUI_CHECK_GLEW],[
 # Check if we should enable bi-directional text, and which library to use.
 AC_DEFUN([CEGUI_CHECK_BIDI],[
     AC_ARG_ENABLE([bidirectional-text],
-                  AC_HELP_STRING([--enable-bidirectional-text],
-                                 [Enable bidirectional text support.]),
+                  AS_HELP_STRING([--enable-bidirectional-text],[Enable bidirectional text support.]),
                   [cegui_enable_bidi=$enableval], [cegui_enable_bidi=no])
 
-    AC_ARG_WITH([embedded-minibidi], AC_HELP_STRING([--with-embedded-minibidi],
-                                 [Use embedded minibi code for bidirectional text support]),
+    AC_ARG_WITH([embedded-minibidi], AS_HELP_STRING([--with-embedded-minibidi],[Use embedded minibi code for bidirectional text support]),
                   [cegui_with_minibidi=$withval], [cegui_with_minibidi=no])
 
     if test x$cegui_enable_bidi = xyes; then
@@ -1093,13 +1087,19 @@ AC_DEFUN([CEGUI_CHECK_BIDI],[
 # Check if freetype is available and if it's been disabled
 AC_DEFUN([CEGUI_CHECK_FREETYPE],[
     AC_ARG_ENABLE([freetype],
-                  AC_HELP_STRING([--disable-freetype],
-                                 [Disable the use of the Freetype 2 library for font support.]),
+                  [AS_HELP_STRING([--disable-freetype],
+                                  [Disable the use of the Freetype 2 library for font support.])],
                   [cegui_enable_freetype=$enableval], [cegui_enable_freetype=yes])
 
-    if test x$cegui_enable_freetype = xyes; then
-        PKG_CHECK_MODULES(freetype2, freetype2 >= 0.15.0,
-            [AC_DEFINE(CEGUI_HAS_FREETYPE, [], [Define to enable freetype 2 font support in CEGUI])
+    if test "x${cegui_enable_freetype}" = "xyes"; then
+        PKG_CHECK_MODULES([freetype2],[freetype2 >= 0.15.0],
+            [AC_DEFINE([CEGUI_HAS_FREETYPE],[],
+                       [Define to enable freetype 2 font support in CEGUI])
+             AC_CHECK_HEADERS([ft2build.h],[],[
+               AC_CHECK_HEADERS([freetype2/ft2build.h],[],[
+                 AC_CHECK_HEADERS([devel/ft2build.h])
+               ])
+             ])
              cegui_found_freetype=yes],
             [AC_MSG_ERROR([Freetype2 library not found!  To continue anyway, rerun configure with the --disable-freetype option.])
              cegui_found_freetype=no])
@@ -1107,15 +1107,15 @@ AC_DEFUN([CEGUI_CHECK_FREETYPE],[
         AC_MSG_NOTICE([Freetype font support was disabled; hope you know what you're doing!?])
     fi
 
-    AM_CONDITIONAL([CEGUI_BUILD_FREETYPE_FONT], [test x$cegui_enable_freetype = xyes && test x$cegui_found_freetype=xyes])
-    AC_SUBST(freetype2_CFLAGS)
-    AC_SUBST(freetype2_LIBS)
+    AM_CONDITIONAL([CEGUI_BUILD_FREETYPE_FONT],
+                   [test x$cegui_enable_freetype = xyes && test x$cegui_found_freetype=xyes])
+    AC_SUBST([freetype2_CFLAGS])
+    AC_SUBST([freetype2_LIBS])
 ])
 
 AC_DEFUN([CEGUI_CHECK_DEFAULT_LOGGER],[
     AC_ARG_ENABLE([default-logger],
-                  AC_HELP_STRING([--disable-default-logger],
-                                 [Disable building the default logger.  NB: You must provide a custom alternative
+                  AS_HELP_STRING([--disable-default-logger],[Disable building the default logger.  NB: You must provide a custom alternative
                                  logger class based on the CEGUI::Logger class and instantiate it prior to creating
                                  the CEGUI::System object.]),
                   [cegui_enable_default_logger=$enableval], [cegui_enable_default_logger=yes])
@@ -1132,8 +1132,7 @@ AC_DEFUN([CEGUI_CHECK_DEFAULT_LOGGER],[
 
 AC_DEFUN([CEGUI_LIBTOOL_OPTIONS],[
     AC_ARG_ENABLE([version-suffix],
-                  AC_HELP_STRING([--disable-version-suffix],
-                                 [Disable adding the release version to shared libraries.
+                  AS_HELP_STRING([--disable-version-suffix],[Disable adding the release version to shared libraries.
                                   Using this option leaves you with no version suffix, so may not
                                   be what you want to do (except for Win32 builds, perhaps).
                                   See also --with-version-suffix for how to modify the version
@@ -1148,8 +1147,7 @@ AC_DEFUN([CEGUI_LIBTOOL_OPTIONS],[
                   ])
 
     AC_ARG_WITH([version-suffix],
-                  AC_HELP_STRING([--with-version-suffix],
-                                 [The release version added to shared libraries unless the
+                  AS_HELP_STRING([--with-version-suffix],[The release version added to shared libraries unless the
                                   --disable-version-suffix option is given (default=CEGUI_RELEASE_VERSION)]),
                   [cegui_lib_version_suffix=$withval], [cegui_lib_version_suffix=CEGUI_RELEASE_VERSION])
 
@@ -1175,8 +1173,7 @@ AC_DEFUN([CEGUI_LIBTOOL_OPTIONS],[
 
 AC_DEFUN([CEGUI_CHECK_BUILD_SUFFIX],[
     AC_ARG_WITH([build-suffix],
-                  AC_HELP_STRING([--with-build-suffix],
-                                 [Adds a custom suffix to the name of all binaries.]),
+                  AS_HELP_STRING([--with-build-suffix],[Adds a custom suffix to the name of all binaries.]),
                   [cegui_bsfx=$withval], [cegui_bsfx=""])
 
     if test "x$cegui_bsfx" != "x"; then
@@ -1190,8 +1187,7 @@ AC_DEFUN([CEGUI_CHECK_BUILD_SUFFIX],[
 # Check if pcre is available and if it's been disabled
 AC_DEFUN([CEGUI_CHECK_PCRE],[
     AC_ARG_ENABLE([pcre],
-                  AC_HELP_STRING([--disable-pcre],
-                                 [Disable the use of the PCRE library for regular expression support.]),
+                  AS_HELP_STRING([--disable-pcre],[Disable the use of the PCRE library for regular expression support.]),
                   [cegui_enable_pcre=$enableval], [cegui_enable_pcre=yes])
 
     if test x$cegui_enable_pcre = xyes; then
@@ -1256,8 +1252,7 @@ continue with the static build.])
 
 AC_DEFUN([CEGUI_CHECK_MINIZIP_RESOURCE_PROVIDER],[
     AC_ARG_ENABLE([minizip-resource-provider],
-                  AC_HELP_STRING([--enable-minizip-resource-provider],
-                                 [Build the Minizip resource provider.]),
+                  AS_HELP_STRING([--enable-minizip-resource-provider],[Build the Minizip resource provider.]),
                   [cegui_enable_minizip_rp=$enableval], [cegui_enable_minizip_rp=no])
 
     if test "x$cegui_enable_minizip_rp" = "xyes"; then
@@ -1287,7 +1282,7 @@ LDFLAGS=""
 dnl define search path 
 cegui_zlib_search="/usr/local /usr"
 AC_ARG_WITH([zlib],
-    AC_HELP_STRING([--with-zlib=DIR], [root directory path of zlib installation]), 
+    AS_HELP_STRING([--with-zlib=DIR],[root directory path of zlib installation]), 
     [if test "$withval" != no ; then
         cegui_zlib_search="$withval $zlib_search"
     fi], 
@@ -1333,7 +1328,7 @@ LDFLAGS="$cegui_zlib_save_LDFLAGS"
 # Check for python
 AC_DEFUN([CEGUI_CHECK_PYTHON],
 [
-    AC_ARG_ENABLE([python-module], AC_HELP_STRING([--disable-python-module], [Disables building of the Python extension module.]),
+    AC_ARG_ENABLE([python-module], AS_HELP_STRING([--disable-python-module],[Disables building of the Python extension module.]),
                   [cegui_with_python=$enableval], [cegui_with_python=yes])
 
     if test x"$cegui_with_python" = xyes; then
@@ -1517,7 +1512,7 @@ AC_DEFUN([AX_BOOST_PYTHON],
 AC_CACHE_CHECK(whether the Boost::Python library is available,
 ac_cv_boost_python,
 [AC_LANG_SAVE
- AC_LANG_CPLUSPLUS
+ AC_LANG([C++])
  CPPFLAGS_SAVE=$CPPFLAGS
  if test x$PYTHON_INCLUDE_DIR != x; then
    CPPFLAGS="-I$PYTHON_INCLUDE_DIR $CPPFLAGS"
