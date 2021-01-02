@@ -22,3 +22,7 @@ stamp-h*
 config.h
 confdefs.h
 conftest*
+cegui/CEGUI*.pc
+cegui/CEGUI.spec
+cegui/include/config.h
+doc/doxygen/doxyfile
