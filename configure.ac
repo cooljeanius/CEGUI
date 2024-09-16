@@ -17,7 +17,7 @@ m4_define([CEGUI_RELEASE_VERSION],[CEGUI_MAJ_VER.CEGUI_MIN_VER.CEGUI_REL_VER])
 AC_INIT([CEGUI],[CEGUI_RELEASE_VERSION],[http://mantis.cegui.org.uk/],[CEGUI])
 AC_CONFIG_SRCDIR([cegui/src/CEGUIBase.cpp])
 AC_CONFIG_AUX_DIR([build-aux])
-AM_INIT_AUTOMAKE([foreign dist-zip tar-ustar subdir-objects])
+AM_INIT_AUTOMAKE([1.10 foreign dist-zip tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS([cegui/include/config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -100,7 +100,7 @@ dnl# ISO C90 headers unconditionally.
 # script's behavior did not change.  They are probably safe to remove.
 AC_CHECK_INCLUDES_DEFAULT
 if test "x${EGREP}" = "x"; then
-  test -z "${EGREP}"
+  test -z "${EGREP}" || unset EGREP
   AC_PROG_EGREP
 fi
 AC_PATH_X
@@ -383,4 +383,4 @@ echo "*         Ogre3D Renderer available in samples:         ${cegui_samples_us
 echo "************************************************************************"
 echo
 echo "Now you can do make && make install.  Good Luck!"
-echo
+echo ""
