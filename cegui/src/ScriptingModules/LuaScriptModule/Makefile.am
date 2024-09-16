@@ -35,3 +35,6 @@ libCEGUILuaScriptModule@cegui_bsfx@_la_LIBADD += $(toluapp_LIBS)
 endif
 
 noinst_HEADERS = required.h
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps || find . -name '.deps' -delete

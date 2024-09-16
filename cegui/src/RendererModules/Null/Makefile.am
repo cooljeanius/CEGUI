@@ -19,3 +19,6 @@ libCEGUINullRenderer@cegui_bsfx@_la_SOURCES = CEGUINullGeometryBuffer.cpp \
                                   CEGUINullRenderTarget.cpp \
                                   CEGUINullTexture.cpp \
                                   CEGUINullTextureTarget.cpp 
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

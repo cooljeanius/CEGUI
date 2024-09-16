@@ -18,3 +18,5 @@ libCEGUIRapidXMLParser@cegui_bsfx@_la_LIBADD = $(top_builddir)/cegui/src/libCEGU
 libCEGUIRapidXMLParser@cegui_bsfx@_la_SOURCES = CEGUIRapidXMLParser.cpp \
                                    CEGUIRapidXMLParserModule.cpp
 
+distclean-local:
+	-rm -rf .deps || rmdir .deps

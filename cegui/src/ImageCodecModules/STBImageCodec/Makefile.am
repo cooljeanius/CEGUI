@@ -12,3 +12,6 @@ libCEGUISTBImageCodec@cegui_bsfx@_la_LIBADD = $(top_builddir)/cegui/src/libCEGUI
 lib_LTLIBRARIES=libCEGUISTBImageCodec@cegui_bsfx@.la
 
 libCEGUISTBImageCodec@cegui_bsfx@_la_SOURCES = CEGUISTBImageCodec.cpp CEGUISTBImageCodecModule.cpp stb_image.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

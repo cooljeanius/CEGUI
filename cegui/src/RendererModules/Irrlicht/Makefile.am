@@ -23,3 +23,6 @@ libCEGUIIrrlichtRenderer@cegui_bsfx@_la_SOURCES = CEGUIIrrlichtGeometryBuffer.cp
                                       CEGUIIrrlichtTexture.cpp \
                                       CEGUIIrrlichtTextureTarget.cpp \
                                       CEGUIIrrlichtWindowTarget.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

@@ -22,7 +22,7 @@ libCEGUIFalagardWRBase@cegui_bsfx@_la_SOURCES = FalButton.cpp \
                                   FalEditboxProperties.cpp \
                                   FalFrameWindow.cpp \
                                   FalItemEntry.cpp \
-								  FalItemListbox.cpp \
+                                  FalItemListbox.cpp \
                                   FalListHeader.cpp \
                                   FalListHeaderProperties.cpp \
                                   FalListHeaderSegment.cpp \
@@ -54,3 +54,6 @@ libCEGUIFalagardWRBase@cegui_bsfx@_la_SOURCES = FalButton.cpp \
                                   FalTitlebar.cpp \
                                   FalTree.cpp \
                                   FalTooltip.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

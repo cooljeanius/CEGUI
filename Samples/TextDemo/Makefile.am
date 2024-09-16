@@ -13,6 +13,8 @@ TextDemo@cegui_bsfx@_LDADD = $(top_builddir)/cegui/src/libCEGUIBase@cegui_bsfx@.
                  $(top_builddir)/Samples/common/src/libCEGUISampleHelper@cegui_bsfx@.la \
 				 $(SAMPLE_STATIC_LDFLAGS)
 
-
 install-exec-local:
 	$(LN_S) -f `pwd`/.libs/TextDemo@cegui_bsfx@$(EXEEXT) $(top_builddir)/bin/TextDemo@cegui_bsfx@$(EXEEXT)
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

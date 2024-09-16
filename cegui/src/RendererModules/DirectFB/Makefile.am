@@ -12,3 +12,6 @@ libCEGUIDirectFBRenderer@cegui_bsfx@_la_SOURCES = CEGUIDirectFBGeometryBuffer.cp
                                       CEGUIDirectFBRenderer.cpp \
                                       CEGUIDirectFBRenderTarget.cpp \
                                       CEGUIDirectFBTexture.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

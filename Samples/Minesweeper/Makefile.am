@@ -14,3 +14,6 @@ Minesweeper@cegui_bsfx@_LDADD = $(top_builddir)/cegui/src/libCEGUIBase@cegui_bsf
 
 install-exec-local:
 	$(LN_S) -f `pwd`/.libs/Minesweeper@cegui_bsfx@$(EXEEXT) $(top_builddir)/bin/Minesweeper@cegui_bsfx@$(EXEEXT)
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

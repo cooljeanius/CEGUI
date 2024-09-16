@@ -20,3 +20,6 @@ lib_LTLIBRARIES=libCEGUIExpatParser@cegui_bsfx@.la
 
 libCEGUIExpatParser@cegui_bsfx@_la_SOURCES = CEGUIExpatParser.cpp \
                                  CEGUIExpatParserModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

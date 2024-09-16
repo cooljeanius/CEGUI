@@ -1385,14 +1385,14 @@ EXTRA_DIST = commonUtils.py \
              generateCEGUIOpenGLRenderer.py \
              generateCEGUI.py \
              generate.py \
-			 output/CEGUI/exposed_decl.pypp.txt \
-			 output/CEGUI/named_tuple.py \
-			 output/CEGUINullRenderer/exposed_decl.pypp.txt \
-			 output/CEGUINullRenderer/named_tuple.py \
-			 output/CEGUIOgreRenderer/exposed_decl.pypp.txt \
-			 output/CEGUIOgreRenderer/named_tuple.py \
-			 output/CEGUIOpenGLRenderer/exposed_decl.pypp.txt \
-			 output/CEGUIOpenGLRenderer/named_tuple.py \
+             output/CEGUI/exposed_decl.pypp.txt \
+             output/CEGUI/named_tuple.py \
+             output/CEGUINullRenderer/exposed_decl.pypp.txt \
+             output/CEGUINullRenderer/named_tuple.py \
+             output/CEGUIOgreRenderer/exposed_decl.pypp.txt \
+             output/CEGUIOgreRenderer/named_tuple.py \
+             output/CEGUIOpenGLRenderer/exposed_decl.pypp.txt \
+             output/CEGUIOpenGLRenderer/named_tuple.py \
              distutils/README \
              distutils/setup.py \
              distutils/WINDOWS_ONLY \
@@ -4185,7 +4185,7 @@ distclean: distclean-am
 	-rm -f output/CEGUIOpenGLRenderer/$(DEPDIR)/PyCEGUIOpenGLRenderer_la-PyCEGUIOpenGLRenderer.main.Plo
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
-	distclean-tags
+	distclean-local distclean-tags
 
 dvi: dvi-am
 
@@ -4461,12 +4461,12 @@ uninstall-am: uninstall-pyexecLTLIBRARIES
 .PHONY: CTAGS GTAGS TAGS all all-am am--depfiles check check-am clean \
 	clean-generic clean-libtool clean-pyexecLTLIBRARIES \
 	cscopelist-am ctags ctags-am distclean distclean-compile \
-	distclean-generic distclean-libtool distclean-tags distdir dvi \
-	dvi-am html html-am info info-am install install-am \
-	install-data install-data-am install-dvi install-dvi-am \
-	install-exec install-exec-am install-html install-html-am \
-	install-info install-info-am install-man install-pdf \
-	install-pdf-am install-ps install-ps-am \
+	distclean-generic distclean-libtool distclean-local \
+	distclean-tags distdir dvi dvi-am html html-am info info-am \
+	install install-am install-data install-data-am install-dvi \
+	install-dvi-am install-exec install-exec-am install-html \
+	install-html-am install-info install-info-am install-man \
+	install-pdf install-pdf-am install-ps install-ps-am \
 	install-pyexecLTLIBRARIES install-strip installcheck \
 	installcheck-am installdirs maintainer-clean \
 	maintainer-clean-generic mostlyclean mostlyclean-compile \
@@ -4476,6 +4476,9 @@ uninstall-am: uninstall-pyexecLTLIBRARIES
 
 .PRECIOUS: Makefile
 
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps || find . -name '.deps' -delete
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

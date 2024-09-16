@@ -61,3 +61,6 @@ EXTRA_DIST = CEGuiD3D10BaseApplication.cpp \
              MacCEGuiRendererSelector.cpp \
              Win32AppHelper.cpp \
              Win32CEGuiRendererSelector.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

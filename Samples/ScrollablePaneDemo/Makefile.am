@@ -13,3 +13,6 @@ ScrollablePaneDemo@cegui_bsfx@_LDADD = $(top_builddir)/cegui/src/libCEGUIBase@ce
 
 install-exec-local:
 	$(LN_S) -f `pwd`/.libs/ScrollablePaneDemo@cegui_bsfx@$(EXEEXT) $(top_builddir)/bin/ScrollablePaneDemo@cegui_bsfx@$(EXEEXT)
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

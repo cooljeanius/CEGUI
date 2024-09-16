@@ -22,3 +22,6 @@ libCEGUIOgreRenderer@cegui_bsfx@_la_SOURCES = CEGUIOgreGeometryBuffer.cpp \
                                   CEGUIOgreTexture.cpp \
                                   CEGUIOgreTextureTarget.cpp \
                                   CEGUIOgreWindowTarget.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

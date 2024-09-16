@@ -28,3 +28,6 @@ endif
 
 noinst_HEADERS = ceguitinyxml/tinystr.h \
                  ceguitinyxml/tinyxml.h
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps || find . -name '.deps' -delete

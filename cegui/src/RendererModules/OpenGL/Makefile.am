@@ -54,3 +54,6 @@ endif
 noinst_HEADERS= GLEW/GL/glew.h \
                 GLEW/GL/glxew.h \
                 GLEW/GL/wglew.h
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps || find . -name '.deps' -delete

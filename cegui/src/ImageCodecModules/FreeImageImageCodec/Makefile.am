@@ -18,3 +18,6 @@ libCEGUIFreeImageImageCodec@cegui_bsfx@_la_LIBADD = $(FreeImage_LIBS) \
 lib_LTLIBRARIES=libCEGUIFreeImageImageCodec@cegui_bsfx@.la
 
 libCEGUIFreeImageImageCodec@cegui_bsfx@_la_SOURCES = CEGUIFreeImageImageCodec.cpp CEGUIFreeImageImageCodecModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

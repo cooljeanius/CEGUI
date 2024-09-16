@@ -26,6 +26,8 @@ else
 Demo8@cegui_bsfx@_LDADD += $(toluapp_LIBS)
 endif
 
-
 install-exec-local:
 	$(LN_S) -f `pwd`/.libs/Demo8@cegui_bsfx@$(EXEEXT) $(top_builddir)/bin/Demo8@cegui_bsfx@$(EXEEXT)
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

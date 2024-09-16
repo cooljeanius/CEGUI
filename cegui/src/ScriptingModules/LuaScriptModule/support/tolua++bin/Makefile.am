@@ -38,3 +38,6 @@ else
 AM_CPPFLAGS += $(toluapp_CFLAGS)
 tolua__cegui@cegui_bsfx@_LDADD += $(toluapp_LIBS)
 endif
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

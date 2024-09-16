@@ -18,3 +18,6 @@ libCEGUIDevILImageCodec@cegui_bsfx@_la_LIBADD = $(DevIL_LIBS) \
 lib_LTLIBRARIES=libCEGUIDevILImageCodec@cegui_bsfx@.la
 
 libCEGUIDevILImageCodec@cegui_bsfx@_la_SOURCES = CEGUIDevILImageCodec.cpp CEGUIDevILImageCodecModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

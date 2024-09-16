@@ -51,11 +51,11 @@ libCEGUIBase@cegui_bsfx@_la_SOURCES = \
                       CEGUIFontProperties.cpp \
                       CEGUIFont_xmlHandler.cpp \
                       CEGUIFormattedRenderedString.cpp \
-					  CEGUIGeometryBuffer.cpp \
+                      CEGUIGeometryBuffer.cpp \
                       CEGUIGlobalEventSet.cpp \
                       CEGUIGUILayout_xmlHandler.cpp \
                       CEGUIImage.cpp \
-					  CEGUIImageCodec.cpp \
+                      CEGUIImageCodec.cpp \
                       CEGUIImageset.cpp \
                       CEGUIImagesetManager.cpp \
                       CEGUIImageset_xmlHandler.cpp \
@@ -79,7 +79,7 @@ libCEGUIBase@cegui_bsfx@_la_SOURCES = \
                       CEGUIRenderingRoot.cpp \
                       CEGUIRenderingSurface.cpp \
                       CEGUIRenderingWindow.cpp \
-					  CEGUIRenderEffectManager.cpp \
+                      CEGUIRenderEffectManager.cpp \
                       CEGUIRenderQueue.cpp \
                       CEGUIRightAlignedRenderedString.cpp \
                       CEGUIScheme.cpp \
@@ -162,7 +162,7 @@ libCEGUIBase@cegui_bsfx@_la_SOURCES = \
                       elements/CEGUIScrolledContainerProperties.cpp \
                       elements/CEGUIScrolledItemListBase.cpp \
                       elements/CEGUIScrolledItemListBaseProperties.cpp \
-					  elements/CEGUISequentialLayoutContainer.cpp \
+                      elements/CEGUISequentialLayoutContainer.cpp \
                       elements/CEGUISlider.cpp \
                       elements/CEGUISliderProperties.cpp \
                       elements/CEGUISpinner.cpp \
@@ -233,3 +233,5 @@ EXTRA_libCEGUIBase@cegui_bsfx@_la_SOURCES = minibidi.cpp
 EXTRA_DIST = implementations/mac/macPlugins.h \
              minizip/ioapi.h minizip/iowin32.cpp minizip/iowin32.h minizip/unzip.h minizip/README
 
+distclean-local:
+	-rm -rf .deps || rmdir .deps || find . -name '.deps' -delete

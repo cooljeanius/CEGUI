@@ -20,3 +20,6 @@ lib_LTLIBRARIES=libCEGUIXercesParser@cegui_bsfx@.la
 libCEGUIXercesParser@cegui_bsfx@_la_SOURCES = CEGUIXercesParser.cpp \
                                   CEGUIXercesParserModule.cpp \
                                   CEGUIXercesParserProperties.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

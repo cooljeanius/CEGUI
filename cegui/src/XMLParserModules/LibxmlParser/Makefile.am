@@ -19,3 +19,6 @@ lib_LTLIBRARIES=libCEGUILibxmlParser@cegui_bsfx@.la
 
 libCEGUILibxmlParser@cegui_bsfx@_la_SOURCES = CEGUILibxmlParser.cpp \
                                   CEGUILibxmlParserModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

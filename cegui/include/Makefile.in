@@ -541,6 +541,7 @@ noinst_HEADERS = CEGUIFreeTypeFont.h \
                  CEGUIFribidiVisualMapping.h \
                  CEGUIMinibidiVisualMapping.h
 
+DISTCLEANFILES = *~
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 
@@ -807,6 +808,7 @@ clean-generic:
 distclean-generic:
 	-$(am__rm_f) $(CONFIG_CLEAN_FILES)
 	-test . = "$(srcdir)" || $(am__rm_f) $(CONFIG_CLEAN_VPATH_FILES)
+	-$(am__rm_f) $(DISTCLEANFILES)
 
 maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"

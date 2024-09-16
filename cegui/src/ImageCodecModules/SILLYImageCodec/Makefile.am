@@ -18,3 +18,6 @@ libCEGUISILLYImageCodec@cegui_bsfx@_la_LIBADD = $(SILLY_LIBS) \
 lib_LTLIBRARIES=libCEGUISILLYImageCodec@cegui_bsfx@.la
 
 libCEGUISILLYImageCodec@cegui_bsfx@_la_SOURCES = CEGUISILLYImageCodec.cpp CEGUISILLYImageCodecModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

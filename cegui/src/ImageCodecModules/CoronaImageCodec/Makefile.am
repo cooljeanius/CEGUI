@@ -18,3 +18,6 @@ libCEGUICoronaImageCodec@cegui_bsfx@_la_LIBADD = $(Corona_LIBS) \
 lib_LTLIBRARIES=libCEGUICoronaImageCodec@cegui_bsfx@.la
 
 libCEGUICoronaImageCodec@cegui_bsfx@_la_SOURCES = CEGUICoronaImageCodec.cpp CEGUICoronaImageCodecModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

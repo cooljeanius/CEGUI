@@ -529,17 +529,19 @@ EXTRA_DIST = commonUtils.py \
              generateCEGUIOpenGLRenderer.py \
              generateCEGUI.py \
              generate.py \
-			 output/CEGUI/exposed_decl.pypp.txt \
-			 output/CEGUI/named_tuple.py \
-			 output/CEGUINullRenderer/exposed_decl.pypp.txt \
-			 output/CEGUINullRenderer/named_tuple.py \
-			 output/CEGUIOgreRenderer/exposed_decl.pypp.txt \
-			 output/CEGUIOgreRenderer/named_tuple.py \
-			 output/CEGUIOpenGLRenderer/exposed_decl.pypp.txt \
-			 output/CEGUIOpenGLRenderer/named_tuple.py \
+             output/CEGUI/exposed_decl.pypp.txt \
+             output/CEGUI/named_tuple.py \
+             output/CEGUINullRenderer/exposed_decl.pypp.txt \
+             output/CEGUINullRenderer/named_tuple.py \
+             output/CEGUIOgreRenderer/exposed_decl.pypp.txt \
+             output/CEGUIOgreRenderer/named_tuple.py \
+             output/CEGUIOpenGLRenderer/exposed_decl.pypp.txt \
+             output/CEGUIOpenGLRenderer/named_tuple.py \
              distutils/README \
              distutils/setup.py \
              distutils/WINDOWS_ONLY \
              distutils/PyCEGUI/fake.py \
              distutils/PyCEGUI/__init__.py
 
+distclean-local:
+	-rm -rf .deps || rmdir .deps || find . -name '.deps' -delete

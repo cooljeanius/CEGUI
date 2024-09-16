@@ -14,3 +14,6 @@ endif
 lib_LTLIBRARIES=libCEGUITGAImageCodec@cegui_bsfx@.la
 libCEGUITGAImageCodec@cegui_bsfx@_la_LIBADD = $(top_builddir)/cegui/src/libCEGUIBase@cegui_bsfx@.la
 libCEGUITGAImageCodec@cegui_bsfx@_la_SOURCES = CEGUITGAImageCodec.cpp CEGUITGAImageCodecModule.cpp
+
+distclean-local:
+	-rm -rf .deps || rmdir .deps

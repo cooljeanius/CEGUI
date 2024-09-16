@@ -125,3 +125,5 @@ noinst_HEADERS = CEGUIFreeTypeFont.h \
                  CEGUIPCRERegexMatcher.h \
                  CEGUIFribidiVisualMapping.h \
                  CEGUIMinibidiVisualMapping.h
+
+DISTCLEANFILES = *~

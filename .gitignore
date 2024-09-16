@@ -12,6 +12,8 @@ libtool
 */*deps/*.*o
 */*/*deps/*.*o
 */*/*/*deps/*.*o
+*/*/*/*/*deps/*.*o
+*/*/*/*/*/*deps/*.*o
 */*libs/*.*o
 */*/*libs/*.*o
 */*/*/*libs/*.*o
@@ -22,6 +24,7 @@ stamp-h*
 config.h
 confdefs.h
 conftest*
+conf*/*.awk
 cegui/CEGUI*.pc
 cegui/CEGUI.spec
 cegui/include/config.h
