@@ -491,7 +491,7 @@
 		DA109AAB0F6D9A1E00B8A582 /* CEGUIExpatParserModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096BB0F6D64BF00B8A582 /* CEGUIExpatParserModule.cpp */; };
 		DA109AAF0F6D9A7800B8A582 /* CEGUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1097A30F6D838D00B8A582 /* CEGUIBase.framework */; };
 		DA109AB30F6D9A9B00B8A582 /* expat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109AB20F6D9A9B00B8A582 /* expat.framework */; };
-		DA109AD20F6D9AFC00B8A582 /* expat.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109AB20F6D9A9B00B8A582 /* expat.framework */; };
+		DA109AD20F6D9AFC00B8A582 /* expat.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109AB20F6D9A9B00B8A582 /* expat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA109B3D0F6DA49500B8A582 /* CEGUITinyXMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096C90F6D652D00B8A582 /* CEGUITinyXMLParser.cpp */; };
 		DA109B3E0F6DA49500B8A582 /* CEGUITinyXMLParserModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096CA0F6D652D00B8A582 /* CEGUITinyXMLParserModule.cpp */; };
 		DA109B3F0F6DA49500B8A582 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096C30F6D652D00B8A582 /* tinystr.cpp */; };
@@ -503,7 +503,7 @@
 		DA109B570F6DA5CB00B8A582 /* Xerces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109B560F6DA5CB00B8A582 /* Xerces.framework */; };
 		DA109B5A0F6DA5E700B8A582 /* CEGUIXercesParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096CD0F6D656B00B8A582 /* CEGUIXercesParser.cpp */; };
 		DA109B5B0F6DA5E700B8A582 /* CEGUIXercesParserModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096CE0F6D656B00B8A582 /* CEGUIXercesParserModule.cpp */; };
-		DA109B6A0F6DA7CE00B8A582 /* Xerces.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109B560F6DA5CB00B8A582 /* Xerces.framework */; };
+		DA109B6A0F6DA7CE00B8A582 /* Xerces.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109B560F6DA5CB00B8A582 /* Xerces.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA109E8A0F6DA9F600B8A582 /* CEGUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1097A30F6D838D00B8A582 /* CEGUIBase.framework */; };
 		DA109E8D0F6DAA1F00B8A582 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109E8C0F6DAA1F00B8A582 /* libxml2.dylib */; };
 		DA109E8E0F6DAA3E00B8A582 /* CEGUILibxmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096BE0F6D64FD00B8A582 /* CEGUILibxmlParser.cpp */; };
@@ -512,20 +512,20 @@
 		DA109EB10F6DABCE00B8A582 /* corona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109EB00F6DABCE00B8A582 /* corona.framework */; };
 		DA109EB40F6DAC1900B8A582 /* CEGUICoronaImageCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1095FA0F6D602100B8A582 /* CEGUICoronaImageCodec.cpp */; };
 		DA109EB50F6DAC1900B8A582 /* CEGUICoronaImageCodecModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1095FB0F6D602100B8A582 /* CEGUICoronaImageCodecModule.cpp */; };
-		DA109ECD0F6DACAE00B8A582 /* corona.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109EB00F6DABCE00B8A582 /* corona.framework */; };
+		DA109ECD0F6DACAE00B8A582 /* corona.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109EB00F6DABCE00B8A582 /* corona.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA109EE50F6DAD0F00B8A582 /* CEGUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1097A30F6D838D00B8A582 /* CEGUIBase.framework */; };
 		DA109EF40F6DAD5500B8A582 /* CEGUIDevILImageCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1095FE0F6D606100B8A582 /* CEGUIDevILImageCodec.cpp */; };
 		DA109EF50F6DAD5500B8A582 /* CEGUIDevILImageCodecModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1095FF0F6D606100B8A582 /* CEGUIDevILImageCodecModule.cpp */; };
-		DA109EFC0F6DAD8600B8A582 /* IL.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109EE60F6DAD3900B8A582 /* IL.framework */; };
+		DA109EFC0F6DAD8600B8A582 /* IL.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109EE60F6DAD3900B8A582 /* IL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA109F010F6DADB100B8A582 /* IL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109EE60F6DAD3900B8A582 /* IL.framework */; };
 		DA109F180F6DAE6700B8A582 /* CEGUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1097A30F6D838D00B8A582 /* CEGUIBase.framework */; };
 		DA109F1B0F6DB06300B8A582 /* FreeImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109F1A0F6DB06300B8A582 /* FreeImage.framework */; };
-		DA109F2A0F6DB0AF00B8A582 /* FreeImage.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109F1A0F6DB06300B8A582 /* FreeImage.framework */; };
+		DA109F2A0F6DB0AF00B8A582 /* FreeImage.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109F1A0F6DB06300B8A582 /* FreeImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA109F340F6DB0CA00B8A582 /* CEGUIFreeImageImageCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096020F6D609300B8A582 /* CEGUIFreeImageImageCodec.cpp */; };
 		DA109F350F6DB0CA00B8A582 /* CEGUIFreeImageImageCodecModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096030F6D609300B8A582 /* CEGUIFreeImageImageCodecModule.cpp */; };
 		DA109F460F6DB12800B8A582 /* CEGUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1097A30F6D838D00B8A582 /* CEGUIBase.framework */; };
 		DA109F4B0F6DB16F00B8A582 /* SILLY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA109F4A0F6DB16F00B8A582 /* SILLY.framework */; };
-		DA109F680F6DB1AA00B8A582 /* SILLY.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109F4A0F6DB16F00B8A582 /* SILLY.framework */; };
+		DA109F680F6DB1AA00B8A582 /* SILLY.framework in Copy Bundle Frameworks */ = {isa = PBXBuildFile; fileRef = DA109F4A0F6DB16F00B8A582 /* SILLY.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DA109F690F6DB1C700B8A582 /* CEGUISILLYImageCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096060F6D60C100B8A582 /* CEGUISILLYImageCodec.cpp */; };
 		DA109F6A0F6DB1C700B8A582 /* CEGUISILLYImageCodecModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA1096070F6D60C100B8A582 /* CEGUISILLYImageCodecModule.cpp */; };
 		DA109F7B0F6DB21000B8A582 /* CEGUIBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1097A30F6D838D00B8A582 /* CEGUIBase.framework */; };
@@ -7154,18 +7154,18 @@
 		DA10933D0F6D51AE00B8A582 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = DA1093400F6D51AE00B8A582 /* Build configuration list for PBXProject "CEGUI" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
 				en,
+				Base,
+				ja,
+				fr,
+				de,
 			);
 			mainGroup = DA10933B0F6D51AE00B8A582;
 			productRefGroup = DA1097A40F6D838D00B8A582 /* Products */;
@@ -8887,27 +8887,39 @@
 		DA10933E0F6D51AE00B8A582 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CEGUI_BOOST_PATH = /opt/local;
 				CEGUI_BOOST_PYTHON_INCLUDE_PATH = /opt/local/include;
 				CEGUI_BOOST_PYTHON_LIB_PATH = /opt/local/lib;
 				CEGUI_COMPANY_ID = net.sourceforge.crayzedsgui;
 				CEGUI_VERSION = 0.7.6;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -8937,6 +8949,7 @@
 					/opt/local/include/freetype2,
 				);
 				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				VALIDATE_PRODUCT = YES;
@@ -8946,27 +8959,38 @@
 		DA10933F0F6D51AE00B8A582 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CEGUI_BOOST_PATH = /opt/local;
 				CEGUI_BOOST_PYTHON_INCLUDE_PATH = /opt/local/include;
 				CEGUI_BOOST_PYTHON_LIB_PATH = /opt/local/lib;
 				CEGUI_COMPANY_ID = net.sourceforge.crayzedsgui;
 				CEGUI_VERSION = 0.7.6;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
@@ -9004,6 +9028,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -9033,6 +9058,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIBase;
 			};
 			name = Debug;
@@ -9041,6 +9067,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9069,6 +9096,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIBase;
 				ZERO_LINK = NO;
 			};
@@ -9078,6 +9106,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -9098,6 +9127,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIOpenGLRenderer;
 			};
 			name = Debug;
@@ -9106,6 +9136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9125,6 +9156,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIOpenGLRenderer;
 				ZERO_LINK = NO;
 			};
@@ -9134,6 +9166,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9147,6 +9180,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIFalagardWRBase;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9156,6 +9190,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9168,6 +9203,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIFalagardWRBase;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9178,6 +9214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9200,6 +9237,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIExpatParser;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9209,6 +9247,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9230,6 +9269,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIExpatParser;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9240,6 +9280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9257,6 +9298,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUITinyXMLParser;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9266,6 +9308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9282,6 +9325,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUITinyXMLParser;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9292,6 +9336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9314,6 +9359,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIXercesParser;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9323,6 +9369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9344,6 +9391,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIXercesParser;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9354,6 +9402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9371,6 +9420,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUILibxmlParser;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9380,6 +9430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9396,6 +9447,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUILibxmlParser;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9406,6 +9458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9428,6 +9481,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUICoronaImageCodec;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9437,6 +9491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9458,6 +9513,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUICoronaImageCodec;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9468,6 +9524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9490,6 +9547,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIDevILImageCodec;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9499,6 +9557,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9520,6 +9579,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIDevILImageCodec;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9530,6 +9590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9552,6 +9613,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIFreeImageImageCodec;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9561,6 +9623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9582,6 +9645,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIFreeImageImageCodec;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9592,6 +9656,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9614,6 +9679,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUISILLYImageCodec;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9623,6 +9689,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9644,6 +9711,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUISILLYImageCodec;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9654,6 +9722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9667,6 +9736,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUITGAImageCodec;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9676,6 +9746,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9688,6 +9759,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUITGAImageCodec;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9698,6 +9770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -9730,6 +9803,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUISampleHelper;
 			};
 			name = Debug;
@@ -9738,6 +9812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9769,6 +9844,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUISampleHelper;
 				ZERO_LINK = NO;
 			};
@@ -9778,6 +9854,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -9796,6 +9874,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = FirstWindow;
 			};
 			name = Debug;
@@ -9804,6 +9883,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9821,6 +9902,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = FirstWindow;
 				ZERO_LINK = NO;
 			};
@@ -9830,6 +9912,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9847,6 +9930,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIRapidXMLParser;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -9856,6 +9940,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9872,6 +9957,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIRapidXMLParser;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -9882,6 +9968,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -9918,6 +10005,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9951,6 +10039,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9964,6 +10054,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = InventoryDemo;
 			};
 			name = Debug;
@@ -9972,6 +10063,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -9984,6 +10077,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = InventoryDemo;
 				ZERO_LINK = NO;
 			};
@@ -9993,6 +10087,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10006,6 +10102,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Demo7;
 			};
 			name = Debug;
@@ -10014,6 +10111,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10026,6 +10125,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Demo7;
 				ZERO_LINK = NO;
 			};
@@ -10035,6 +10135,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10048,6 +10150,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Demo6;
 			};
 			name = Debug;
@@ -10056,6 +10159,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10068,6 +10173,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Demo6;
 				ZERO_LINK = NO;
 			};
@@ -10077,6 +10183,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10090,6 +10198,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = DragDropDemo;
 			};
 			name = Debug;
@@ -10098,6 +10207,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10110,6 +10221,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = DragDropDemo;
 				ZERO_LINK = NO;
 			};
@@ -10119,6 +10231,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10132,6 +10246,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = FalagardDemo1;
 			};
 			name = Debug;
@@ -10140,6 +10255,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10152,6 +10269,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = FalagardDemo1;
 				ZERO_LINK = NO;
 			};
@@ -10161,6 +10279,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10174,6 +10294,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = FontDemo;
 			};
 			name = Debug;
@@ -10182,6 +10303,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10194,6 +10317,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = FontDemo;
 				ZERO_LINK = NO;
 			};
@@ -10203,6 +10327,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10216,6 +10342,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Minesweeper;
 			};
 			name = Debug;
@@ -10224,6 +10351,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10236,6 +10365,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Minesweeper;
 				ZERO_LINK = NO;
 			};
@@ -10245,6 +10375,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10258,6 +10390,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = ScrollablePaneDemo;
 			};
 			name = Debug;
@@ -10266,6 +10399,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10278,6 +10413,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = ScrollablePaneDemo;
 				ZERO_LINK = NO;
 			};
@@ -10287,6 +10423,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10300,6 +10438,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = TabControlDemo;
 			};
 			name = Debug;
@@ -10308,6 +10447,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10320,6 +10461,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = TabControlDemo;
 				ZERO_LINK = NO;
 			};
@@ -10329,6 +10471,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10342,6 +10486,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = TextDemo;
 			};
 			name = Debug;
@@ -10350,6 +10495,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10362,6 +10509,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = TextDemo;
 				ZERO_LINK = NO;
 			};
@@ -10371,6 +10519,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10384,6 +10534,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = TreeDemo;
 			};
 			name = Debug;
@@ -10392,6 +10543,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10404,6 +10557,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = TreeDemo;
 				ZERO_LINK = NO;
 			};
@@ -10413,6 +10567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -10438,6 +10593,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = "ceguitolua++";
 			};
 			name = Debug;
@@ -10446,6 +10602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10470,6 +10627,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = "ceguitolua++";
 				ZERO_LINK = NO;
 			};
@@ -10479,6 +10637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -10508,6 +10667,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUILuaScriptModule;
 			};
 			name = Debug;
@@ -10516,6 +10676,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10548,6 +10709,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUILuaScriptModule;
 				ZERO_LINK = NO;
 			};
@@ -10557,6 +10719,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10570,6 +10734,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Demo8;
 			};
 			name = Debug;
@@ -10578,6 +10743,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10590,6 +10757,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Demo8;
 				ZERO_LINK = NO;
 			};
@@ -10598,6 +10766,7 @@
 		DAAABB230F6E58450003BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10609,6 +10778,7 @@
 		DAAABB240F6E58450003BE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10620,6 +10790,7 @@
 		DAAABB3A0F6E587D0003BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10631,6 +10802,7 @@
 		DAAABB3B0F6E587D0003BE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10642,6 +10814,7 @@
 		DAAABB490F6E58AA0003BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10653,6 +10826,7 @@
 		DAAABB4A0F6E58AA0003BE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10664,6 +10838,7 @@
 		DAAABB590F6E58F00003BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10675,6 +10850,7 @@
 		DAAABB5A0F6E58F00003BE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10686,6 +10862,7 @@
 		DAAABB660F6E59130003BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10697,6 +10874,7 @@
 		DAAABB670F6E59130003BE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10708,6 +10886,7 @@
 		DAAABB850F6E595F0003BE03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10719,6 +10898,7 @@
 		DAAABB860F6E595F0003BE03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10731,6 +10911,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -10767,6 +10948,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10803,6 +10985,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -10839,6 +11022,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10875,7 +11059,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(CEGUI_OGRE_ARCHS)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -10912,7 +11096,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(CEGUI_OGRE_ARCHS)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -10949,6 +11133,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -10974,6 +11159,7 @@
 					Carbon,
 					"$(CEGUI_IRR_LINK_FLAGS)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIIrrlichtRenderer;
 			};
 			name = Debug;
@@ -10982,6 +11168,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11006,6 +11193,7 @@
 					Carbon,
 					"$(CEGUI_IRR_LINK_FLAGS)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIIrrlichtRenderer;
 				ZERO_LINK = NO;
 			};
@@ -11015,7 +11203,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(CEGUI_OGRE_ARCHS)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -11042,6 +11230,7 @@
 					Carbon,
 					"$(CEGUI_OGRE_LINK_FLAGS)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIOgreRenderer;
 			};
 			name = Debug;
@@ -11050,7 +11239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(CEGUI_OGRE_ARCHS)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11076,6 +11265,7 @@
 					Carbon,
 					"$(CEGUI_OGRE_LINK_FLAGS)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUIOgreRenderer;
 				ZERO_LINK = NO;
 			};
@@ -11085,6 +11275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -11109,6 +11300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11133,6 +11325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -11146,6 +11339,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUISTBImageCodec;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -11155,6 +11349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -11167,6 +11362,7 @@
 					"-framework",
 					Carbon,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "${CEGUI_COMPANY_ID}.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = CEGUISTBImageCodec;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
